@@ -24,7 +24,7 @@ board = list(range(1,10))
 print(board,green + "Для особо-одаренных пишем - это для системы, не для вас"+ reset)
 
 change_symbol = input("Хотите ли вы изменить крестик и нолик на другой символ?\n" + reset)
-if change_symbol == "Да" or change_symbol == "да":
+if change_symbol.lower() == "да":
     player_tokens_list = []
     print("Шаблон для символов: X, ✕, 0, O, ◯")
     tokens_symbols = input("Введите символ для крестика:\n")
